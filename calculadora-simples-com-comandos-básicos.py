@@ -17,8 +17,8 @@ if sinal_operacao == "+":
 elif sinal_operacao == "-":
   print(f'Resultado da Operação = {primeiro_numero - segundo_numero}')
 
-# Se o sinal for de multiplicação (usando 'x' ou '*[]')
-elif sinal_operacao == "x" or sinal_operacao == "*[]":
+# Se o sinal for de multiplicação (usando 'x' ou '*')
+elif sinal_operacao == "x" or sinal_operacao == "*":
    print(f'Resultado da Operação = {primeiro_numero * segundo_numero}')
 
 # Se o sinal for de divisão (usando ':' ou '/') e o segundo número não for zero
