@@ -79,3 +79,4 @@ Exemplo de entrada:
 O programa retorna:
 
 Resultado da operação = 50
+.
