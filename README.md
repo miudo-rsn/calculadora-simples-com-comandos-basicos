@@ -1,97 +1,81 @@
-# Calculadora de Economia de Combustível
+Este projeto consiste em uma calculadora simples feita em Python que permite realizar operações matemáticas básicas pelo terminal.
 
-Este projeto é uma **calculadora em Python** que ajuda o motorista a decidir se **vale a pena ou não** se deslocar até um posto de combustível mais barato, considerando:
+O programa pede dois números e o sinal da operação desejada, faz o cálculo e mostra o resultado na tela.
 
- Consumo do veículo
+As operações disponíveis são:
 
- Preço da gasolina em diferentes postos
+Soma
 
- Distância até o posto mais barato
+Subtração
 
- Valor que pretende abastecer
+Multiplicação
 
+Divisão
 
-O programa informa:
+Porcentagem
 
- O **valor mínimo** e a **litragem mínima** para que a viagem compense
+O programa também faz algumas verificações simples, como impedir divisão por zero e avisar quando uma operação inválida é digitada.
 
- Se um valor específico de abastecimento **gera economia ou prejuízo**
+Funcionalidades
 
- Quanto o usuário **economizará em reais**
+Realizar operações matemáticas básicas no terminal.
 
----
+Aceitar diferentes símbolos para a mesma operação (por exemplo * ou x para multiplicação e / ou : para divisão).
 
-## Funcionalidades
+Verificar divisão por zero.
 
- Limpa a tela automaticamente (Windows, Linux e macOS)
+Calcular porcentagem simples.
 
- Cálculo do **mínimo necessário para compensar a ida ao posto mais barato**
+Aceitar números decimais com vírgula ou ponto.
 
- Cálculo se um **valor específico de abastecimento compensa**
+Mostrar o resultado da operação de forma clara.
 
- Considera dois cenários:
+Avisar quando uma operação inválida é digitada.
 
-   Quando a gasolina atual **não é** do posto mais barato
+Lógica utilizada
 
-   Quando a gasolina atual **já é** do posto mais barato
+O programa pede ao usuário:
 
- Aceita valores com **vírgula ou ponto**
+O primeiro número
 
- Valida entradas inválidas
+O sinal da operação
 
----
+O segundo número
 
-## Lógica utilizada
+Depois disso, o código usa estruturas condicionais (if, elif e else) para descobrir qual operação o usuário escolheu.
 
-O cálculo leva em conta:
+Dependendo do sinal digitado, ele faz o cálculo correspondente:
 
- Diferença de preço entre os postos
++ para soma
 
- Custo por quilômetro rodado
+- para subtração
 
- Custo total de ida e volta até o posto mais barato
+* ou x para multiplicação
 
- Economia gerada por litro abastecido no posto mais barato
+/ ou : para divisão
 
+% para porcentagem
 
-Assim, o programa compara o **custo da locomoção** com a **economia obtida no combustível**.
+Também existe uma verificação para impedir divisão por zero, que é uma operação indefinida.
 
----
+Além disso, antes de transformar os valores em números, o programa troca vírgula por ponto, permitindo digitar números decimais no padrão brasileiro.
 
-## Como executar
-
- É necessário ter o **Python 3** instalado.
-
- No terminal, execute:
-
- python nome_do_arquivo.py
-
- Após isso, siga as instruções exibidas no terminal.
-
----
-
-## Exemplo de uso
+Exemplo de uso
 
 O usuário informa:
 
- Consumo do veículo (km/l)
+Primeiro número
 
- Preço do combustível no posto caro
+Sinal da operação
 
- Preço no posto barato
+Segundo número
 
- Distância até o posto mais barato
+Exemplo de entrada:
 
- Valor que pretende abastecer (opcional)
-
+10
+*
+5
 
 O programa retorna:
 
- Se compensa ou não
-
- O valor mínimo necessário
-
- Quanto será economizado
-
----
-
+Resultado da operação = 50
